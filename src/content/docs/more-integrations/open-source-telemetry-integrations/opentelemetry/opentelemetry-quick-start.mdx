@@ -124,6 +124,20 @@ Click on the link below for your language and complete the configuration steps. 
 <CollapserGroup>
   <Collapser
     className="freq-link"
+    id="agent"
+    title="Example Configuration Using Environment Variables"
+  >
+```
+export OTEL_EXPORTER_OTLP_ENDPOINT="https://otlp.nr-data.net:4317"
+export OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR_LICENSE_KEY_HERE"
+export OTEL_RESOURCE_ATTRIBUTES="service.name=YOUR_SERVICE_NAME"
+```
+  </Collapser>
+</CollapserGroup>
+
+<CollapserGroup>
+  <Collapser
+    className="freq-link"
     id="collector"
     title="Export data to an OpenTelemetry Collector (optional) "
   >
